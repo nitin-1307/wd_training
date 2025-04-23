@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes App</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="custom-body">
+  <div class="main-container">
+        <aside class="sidebar">
+      <h1 class="app-title">Notes</h1>
+      <ul class="nav-links">
+        <li class="nav-active">All Notes</li>
+        <li class="nav-item">Archived Notes</li>
+      </ul>
+      <div>
+        <h2 class="tags-title">Tags</h2>
+        <ul class="tags-list">
+          <li>Cooking</li>
+          <li>Dev</li>
+          <li>Fitness</li>
+          <li>Health</li>
+          <li>Personal</li>
+          <li>React</li>
+          <li>Recipes</li>
+          <li>Shopping</li>
+          <li>Travel</li>
+          <li>TypeScript</li>
+        </ul>
+      </div>
+    </aside>
+
+     <main class="content-area">
+      <div class="content-header">
+        <h2 class="notes-heading">All Notes</h2>
+        <div class="search-bar-container">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" placeholder="Search by title, content, or tags..." class="search-bar" />
+        </div>
+        <button class="create-button">+ Create New Note</button>
+      </div>
+
+      <div class="notes-section">
+           <div class="notes-list">
+          <div class="note-card active">
+            <h3 class="note-title">React Performance Optimization</h3>
+            <div class="note-tags">
+              <span class="tag">Dev</span>
+              <span class="tag">React</span>
+            </div>
+            <div class="note-date">29 Oct 2024</div>
+          </div>
+          <div class="note-card">Japan Travel Planning<div class="note-date">28 Oct 2024</div></div>
+          <div class="note-card">Favorite Pasta Recipes<div class="note-date">27 Oct 2024</div></div>
+          <div class="note-card">Weekly Workout Plan<div class="note-date">25 Oct 2024</div></div>
+          <div class="note-card">Meal Prep Ideas<div class="note-date">12 Oct 2024</div></div>
+          <div class="note-card">Reading List<div class="note-date">05 Oct 2024</div></div>
+          <div class="note-card">Fitness Goals 2025<div class="note-date">22 Sep 2024</div></div>
+        </div>
+        <div class="note-details">
+          <h3 class="note-details-title">React Performance Optimization</h3>
+          <div class="note-meta">Tags <span>Dev, React</span></div>
+          <div class="note-meta">Last edited <span>29 Oct 2024</span></div>
+          <div class="note-content">
+            <p>Key performance optimization techniques:</p>
+            <p><strong>1. Code Splitting</strong><br>
+            - Use React.lazy() for route-based splitting<br>
+            - Implement dynamic imports for heavy components</p>
+
+            <p><strong>2. Memoization</strong><br>
+            - useMemo for expensive calculations<br>
+            - useCallback for function props<br>
+            - React.memo for component optimization</p>
+
+            <p><strong>3. Virtual List Implementation</strong><br>
+            - Use react-window for long lists<br>
+            - Implement infinite scrolling</p>
+
+            <p><strong>TODO:</strong> Benchmark current application and identify bottlenecks</p>
+          </div>
+          <div class="note-actions">
+            <button class="save-button">Save Note</button>
+            <button class="cancel-button">Cancel</button>
+          </div>
+        </div>
+
+           <div class="side-buttons">
+          <button class="archive-button"><i class="fas fa-archive"></i> Archive Note</button>
+          <button class="delete-button"><i class="fas fa-trash"></i> Delete Note</button>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

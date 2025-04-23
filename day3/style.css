@@ -1,0 +1,10 @@
+h1 {
+    border: 2px solid rgb(254, 164, 164);
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5vw;
+    text-align: center;
+    font-family: monospace;
+    color: darkmagenta;
+    font-style: italic;
+}
